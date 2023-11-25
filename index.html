@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="img-container">
+    <h2 class="heading">X Tic Tac Toe O</h2>
+    <div class="selection-card" id="selection">
+        <button class="btn" id="computer">Play with Computer</button>
+        <button class="btn" id="friends">Play with Friends</button>
+    </div>
+
+    <div class="computer" id="com-card">
+        <input type="text" id="player" placeholder="Player Name" value="Player">
+        <button class="btn"  id="start_2">Start</button>
+    </div>
+
+    <div class="name-inputs" id="card">
+        <input type="text" id="name1" placeholder="Player 1 Name" value="Player 1">
+        <input type="text" id="name2" placeholder="Player 2 Name" value="Player 2">
+        <button class="btn"  id="start">Start</button>
+    </div>
+    <div class="container" id="board">
+        <h2>Tic Tac Toe</h2>
+         <div class="base">
+        <div class="board">
+            <div class="win-line"></div>
+            <div class="box bl bt"><span class="text"></span></div>
+            <div class="box bt"><span class="text"></span></div>
+            <div class="box bt br"><span class="text"></span></div>
+            <div class="box bl"><span class="text"></span></div>
+            <div class="box"><span class="text"></span></div>
+            <div class="box br"><span class="text"></span></div>
+            <div class="box bl bb"><span class="text"></span></div>
+            <div class="box bb"><span class="text"></span></div>
+            <div class="box bb br"><span class="text"></span></div>
+        </div>
+
+         <div class="score-board">
+            <div class="score-card">
+        <p><span id="player1"></span> <br> <span id="score_p1"></span></p>
+        </div>
+        <div class="score-card">
+        <p><span id="player2"></span> <br> <span id="score_p2"></span></p>
+    </div>
+    </div>
+</div>
+<h2 id="info"></h2>
+        <div class="btn-container">
+            <button class="btn"  id="reset">Restart</button>
+             <button class="btn"  id="new_game">New Game</button>
+        </div>
+    </div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>

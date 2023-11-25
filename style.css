@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@600&family=Montserrat&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+@media only screen and(max-width:450px) {
+    html {
+        font-size: 70%;
+        width: 20rem;
+        height: fit-content;
+    }
+}
+
+.img-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url("img0.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width:300px) {
+    .img-container {
+        width: auto;
+    }
+}
+
+.heading {
+    position: absolute;
+    margin-bottom: 20rem;
+}
+
+
+
+.btn {
+    margin: 1rem;
+    padding: 0.5rem 2rem;
+    font-size: larger;
+    cursor: pointer;
+    background-color: #fff;
+    color: black;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .4);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.name-inputs {
+    border-radius: 2rem;
+    width: 30rem;
+    height: 15rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    font-family: 'Edu TAS Beginner', cursive;
+    font-family: 'Nunito', sans-serif;
+    animation: arrive 0.6s ease 0s 1 normal forwards;
+    -webkit-animation: arrive 0.6s ease 0s 1 normal forwards;
+}
+
+@keyframes arrive {
+    0% {
+        opacity: 0;
+        transform: scale(0.6);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+input {
+    font-size: larger;
+    width: 25rem;
+    margin: 1rem;
+    padding: 1rem;
+    border: hidden;
+    display: flex;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    font-family: 'Edu TAS Beginner', cursive;
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+    width: 80rem;
+    height: 35rem;
+    margin: auto;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    animation: arrive 0.6s ease 0s 1 normal forwards;
+    -webkit-animation: arrive 0.6s ease 0s 1 normal forwards;
+}
+
+h2 {
+    font-family: 'Edu TAS Beginner', cursive;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.base {
+    width: 53rem;
+    height: 25rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.board {
+    width: 25rem;
+    height: 25rem;
+    display: grid;
+    grid-template-columns: repeat(3, 8.31rem);
+    grid-template-rows: repeat(3, 8.31rem);
+    position: relative;
+}
+
+.box {
+    border: 2px solid;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.br {
+    border-right: 0;
+}
+
+.bl {
+    border-left: 0;
+}
+
+.bt {
+    border-top: 0;
+}
+
+.bb {
+    border-bottom: 0;
+}
+
+
+
+.text {
+    font-family: 'Edu TAS Beginner', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 7rem;
+}
+
+.win-line {
+    position: absolute;
+    width: 0rem;
+    height: 1rem;
+    background-color: #A8DF8E;
+    top: 12rem;
+    border-radius: 2rem;
+    transform: translate(0rem, 0rem) rotate(0deg);
+    -webkit-transform: translate(0rem, 0rem) rotate(0deg);
+    -moz-transform: translate(0rem, 0rem) rotate(0deg);
+    -ms-transform: translate(0rem, 0rem) rotate(0deg);
+    -o-transform: translate(0rem, 0rem) rotate(0deg);
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    display: flex;
+}
+
+
+.score-board {
+    width: 26rem;
+    height: 16rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.score-card {
+    border: 4px solid white;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    width: 12rem;
+    height: 15rem;
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+
+.btn-container {
+    display: flex;
+}
+
+@media only screen and (min-width: 300px) {
+    h2 {
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+
+    .score-board {
+        width: 23rem;
+        height: 9rem;
+    }
+
+    .score-card {
+        width: 10rem;
+        height: 9rem;
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .base {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .score-board {
+        margin-bottom: 2rem;
+    }
+}
+
+
+.selection-card {
+    display: flex;
+    animation: arrive 0.6s ease 0s 1 normal forwards;
+
+}
+
+.computer {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    animation: arrive 0.6s ease 0s 1 normal forwards;
+
+}
+
+@media only screen and (max-width: 500px) {
+
+    .name-inputs,
+    input {
+        width: 80%;
+    }
+
+    .selection-card {
+        flex-wrap: wrap;
+        width: auto;
+    }
+
+    .selection-card .btn {
+        margin: auto;
+        margin-top: 2rem;
+    }
+}
